@@ -1,6 +1,6 @@
 ﻿app.service('customersService', function ($http) {
 
-   /* var that=this;
+    var that=this;
     that.APP_HEADERS={
         'X-Parse-Application-Id':'fKKL6D9Fgw0LxF8dRthUbOC0TcAdZVaZOisaPkkt',
         'X-Parse-REST-API-Key':'3M2oXrVPGaQsxZTCCDFpwrRybg7yjCK5dwFJVwo5'
@@ -12,8 +12,6 @@
     this.getCustomers = function () {
         return customers;
     };
-*/
-/*
     this.insertNewUser = function (reqData,successCB,failureCB) {
         $http({ method : 'POST',
             data:reqData,
@@ -28,13 +26,7 @@
             })
 
     };
-*/
-/*this.inserNewUser(firstName,lastName,city,userName,password)
-    {
-        customers.push(customers.firstName,customers.lastName,customers.city,customers.userName,customers.password)
-
-    };
-  */  this.deleteCustomer = function (id) {
+    this.deleteCustomer = function (id) {
         for (var i = customers.length - 1; i >= 0; i--) {
             if (customers[i].id === id) {
                 customers.splice(i, 1);
